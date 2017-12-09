@@ -1,0 +1,89 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string main() 
+{
+///question one
+
+string firstname = "Cam";
+string lastname = "Newton";
+
+return  
+firstname + lastname 
+
+/// question two 
+String username = "Scott";
+string message = "Welcome to out TigerBook Social Network!";
+string groupname = "#All";
+String message_buffer = "<!" +  username + ":" + groupname  "!>" +  message;
+
+///question three
+
+string username2 = "Kathy";
+string message2 = "Way to go, Scott!";
+string groupname2 = "#Tigers";
+
+message_buffer = "<!" + username2 + ":" + groupname "!>" + message2 + message_buffer;
+
+string message3 = "Go Tiger";
+string message4 = "Glory to Auburn";
+
+message_buffer = "\n" + message3 + "\n" + message4; 
+
+/// question 5
+
+String.size() returns the number of characters in a string
+message_buffer.size() returns 86;
+
+/// question 6 
+
+message.clear() empties the saved string and is now an empty string.
+
+/// question 7
+
+int index = message_buffer().indexOf("<!");
+
+/// question 8
+
+message_buffer().find_first_of("<!", 2);
+
+//// question 9
+
+message_buffer().substr(2, length);
+
+//// question 10
+
+message_buffer().substr(36, 40);
+
+///// question 11
+
+message_buffer().substr(47, 86);
+
+///// question 12
+
+message_buffer().substr(42, 45);
+
+//// question 13
+
+The difference between the two is cin delimiter is a space, where as getline's delimiter is defined.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

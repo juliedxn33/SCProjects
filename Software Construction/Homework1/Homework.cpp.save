@@ -1,0 +1,82 @@
+/// Julie Dixon
+/// jad0070
+/// Homework1Pt2
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() 
+	{
+		string more_users = "yes";
+	
+		string output = "";
+
+		cout << "========================================================\n"
+		cout << "|	Welcome to the TigerBook Social Network		|\n"
+		cout << "========================================================\n"
+	
+	do {
+	
+		string username;
+		string groupname;
+		string message;
+		string alsomessage;
+		bool endofmessage;
+	
+		cout << "Enter user name > ";
+		getline(cin, username);
+		username = username.substr(0, username.find(" "));
+		
+		cout << "Enter group name > ";
+		getline(cin, groupname);
+		groupname = groupname.substr(0, groupname.find(" "));
+		
+		cout << "Enter the message > ";
+	
+		endofmessage = false;
+		alsomessage = "";
+		message = "";
+	
+			while (endofmessage == false)
+			{
+				getline(cin, alsomessage);
+				if (alsomessage != "^!")
+				{
+					message += alsomessage + "\n";
+				}
+				else
+				{
+				endofmessage = true;
+				}
+			}
+	
+		output = username + " (" + groupname + ") >" + "\n" + message + "\n\n" + output;
+	
+	
+		cout << "Any more users? > ";
+		getline(cin, more_users);
+		more_users = more_users.substr(0, more_users.find(" "));
+	}
+
+	while (more_users == "yes"); 
+	
+	
+	cout << "The current messages are >>\n\n";
+
+	cout << output << endl;
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
